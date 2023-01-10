@@ -26,6 +26,7 @@ struct BlurStackView<Header: View, Content: View>: View {
                 .frame(maxWidth: .infinity)
                 .background(.ultraThinMaterial)
                 .zIndex(1)
+                .cornerRadius(9)
             Divider()
             
             contentView
@@ -34,6 +35,7 @@ struct BlurStackView<Header: View, Content: View>: View {
             .offset(y: topOffset >= 200 ? 0 : topOffset - 200)
             .zIndex(0)
             .clipped()
+            .cornerRadius(9)
         }
         .offset(y: topOffset >= 200 ? 0 : -(topOffset - 200))
         .background(

@@ -124,8 +124,10 @@ struct ContentView: View {
                     }
                 }
                 .padding()
-                .background(.red)
+                .background(.ultraThinMaterial)
                 .cornerRadius(13)
+                .clipped()
+                
             }
         }
         
