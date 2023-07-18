@@ -7,15 +7,36 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var mainLabel: UILabel!
+    
+    @IBOutlet weak var myButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
+        
     }
 
 
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        
+        
+        mainLabel.backgroundColor = #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)
+        
+        mainLabel.text = "안녕하세요"
+        
+        mainLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        
+        
+        myButton.backgroundColor = UIColor.blue
+        myButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
+    }
+    
+    
+    
 }
 
