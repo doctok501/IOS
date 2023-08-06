@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myButton: UIButton!
     
+    //앱 실행시 처음 보이는 함수
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
         mainLabel.text = "안녕하세요"
         
         mainLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        
+        mainLabel.textAlignment = NSTextAlignment.center
         
         myButton.backgroundColor = UIColor.blue
         myButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
